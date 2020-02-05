@@ -1,1 +1,1 @@
-# Prime - Hexagonal Arachitecture Skeleton
+# Prime - Hexagonal Architecture Skeleton
