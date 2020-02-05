@@ -1,7 +1,7 @@
 {
     "name": "artishup/prime",
     "description": "Hexagonal Architecture Skeleton",
-    "keywords": ["framework", "laravel", "lumen"],
+    "keywords": ["artishup", "hexagonal", "lumen"],
     "license": "MIT",
     "type": "project",
     "require": {
@@ -19,7 +19,8 @@
             "database/factories"
         ],
         "psr-4": {
-            "App\\": "app/"
+            "Shared\\": "src/Shared",
+            "Prime\\": "src/Prime"
         }
     },
     "autoload-dev": {

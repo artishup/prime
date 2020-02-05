@@ -38,12 +38,12 @@ $app = new Laravel\Lumen\Application(
 
 $app->singleton(
     Illuminate\Contracts\Debug\ExceptionHandler::class,
-    App\Exceptions\Handler::class
+    Shared\Infrastructure\Exceptions\Handler::class
 );
 
 $app->singleton(
     Illuminate\Contracts\Console\Kernel::class,
-    App\Console\Kernel::class
+    Shared\Presentation\Console\Kernel::class
 );
 
 /*
@@ -91,9 +91,7 @@ $app->singleton(
 |
 */
 
-$app->router->group([
-    'namespace' => 'App\Http\Controllers',
-], function ($router) {
+$app->router->group([], function ($router) {
     require __DIR__.'/../routes/web.php';
 });
 

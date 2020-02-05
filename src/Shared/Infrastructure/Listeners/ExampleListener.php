@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Listeners;
+namespace Shared\Infrastructure\Listeners;
 
-use App\Events\ExampleEvent;
+use Shared\Infrastructure\Events\ExampleEvent;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Queue\InteractsWithQueue;
 
@@ -21,7 +21,7 @@ class ExampleListener
     /**
      * Handle the event.
      *
-     * @param  \App\Events\ExampleEvent  $event
+     * @param  \Shared\Infrastructure\Events\ExampleEvent  $event
      * @return void
      */
     public function handle(ExampleEvent $event)

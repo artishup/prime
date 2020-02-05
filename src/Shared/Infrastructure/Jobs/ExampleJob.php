@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Jobs;
+namespace Shared\Infrastructure\Jobs;
 
 class ExampleJob extends Job
 {
