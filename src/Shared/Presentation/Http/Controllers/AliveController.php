@@ -1,8 +1,6 @@
 <?php
 
-namespace Prime\Presentation\Http\Controllers;
-
-use Shared\Presentation\Http\Controllers\Controller;
+namespace ArtishUp\Shared\Presentation\Http\Controllers;
 
 class AliveController extends Controller
 {

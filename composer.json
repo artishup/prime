@@ -6,7 +6,10 @@
     "type": "project",
     "require": {
         "php": "^7.4",
-        "laravel/lumen-framework": "^6.0"
+        "aws/aws-sdk-php-laravel": "^3.4",
+        "lambdish/phunctional": "^2.0",
+        "laravel/lumen-framework": "^6.0",
+        "ramsey/uuid": "^3.9"
     },
     "require-dev": {
         "fzaninotto/faker": "^1.4",
@@ -19,8 +22,7 @@
             "database/factories"
         ],
         "psr-4": {
-            "Shared\\": "src/Shared",
-            "Prime\\": "src/Prime"
+            "ArtishUp\\": "src"
         }
     },
     "autoload-dev": {

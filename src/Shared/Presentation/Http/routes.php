@@ -2,7 +2,7 @@
 
 /*
 |--------------------------------------------------------------------------
-| Application Routes
+| Shared Routes
 |--------------------------------------------------------------------------
 |
 | Here is where you can register all of the routes for an application.
@@ -11,4 +11,8 @@
 |
 */
 
-$router->get('/', 'Prime\Presentation\Http\Controllers\AliveController@alive');
+$router->group(['namespace' => 'ArtishUp\Shared\Presentation\Http\Controllers'], function() use ($router) {
+    $router->get('/', 'AliveController@alive');
+});
+
+
